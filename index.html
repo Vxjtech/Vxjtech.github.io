@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pizzerie Terezín</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <style>
+    @font-face {
+      font-family: MAINFONT;
+      src: url(fonts/OpenSans-Bold.ttf);
+    }
+    .img-overlay{
+    background-color: #000;
+    bottom: 0;
+    height: 40%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+   }
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    p,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: MAINFONT;
+    }
+
+    .menu {
+      display: none
+    }
+
+
+    .bgimg {
+
+      background-repeat: no-repeat;
+      
+      background-size: cover;
+      background-image: url("pizza2.jpg");
+      min-height: 40%;
+
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-hide-small w3 w3-center ">
+    <div style="background-color: black" class="  w3-medium  w3-round w3  " id="myNavbar">
+      <a href="#" class="  w3-hover-dark-grey w3-button w3-bar-item w3-text-white ">| DOMŮ |</a>
+      <a href="#menu" class=" w3-hover-dark-grey w3-button w3-bar-item w3-text-white ">| MENU |</a>
+      <a href="#about" class=" w3-hover-dark-grey w3-button w3-bar-item w3-text-white ">| O NÁS |</a>
+      <a href="#myMap" class=" w3-hover-dark-grey w3-button w3-bar-item w3-text-white ">| KONTAKT |</a>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+
+  <header class=" bgimg w3-display-container " id="home">
+    <div class="w3-display-bottomleft w3-padding">
+      <span class="w3-tag w3-xlarge">Otevřeno každý den od xx.xx xx.xx</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white  w3-hide-small " style=" font-size: 80px ;-webkit-text-stroke: 1.5px black;">Pizzaburger<br>Na truc</span>
+      <span class="w3-text-white  w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>Na truc</b></span>
+      <!-- <p><a href="#menu" class="w3-button w3-xlarge w3-red">Naše aktuální nabídka</a></p> -->
+    </div>
+  </header>
+
+  <!-- Menu Container -->
+  <div style="margin-top: 0px;" class="  w3-white w3-padding-16 w3-large " id="menu">
+    <div class="w3-content-center w3-content">
+
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-gray">
+        <a  href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+          <div style=" border-right: 0.5px black solid; " class="w3-col s4 tablink w3-padding-large w3-hover-dark-grey">Pizzy</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Burger');">
+          <div style="border-right: 0.5px black solid;" class="w3-col s4 tablink w3-padding-large w3-hover-dark-grey ">Burgery</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+          <div style="border: 0,1px black solid;" class="w3-col s4 tablink w3-padding-large w3-hover-dark-grey">Saláty</div>
+        </a>
+
+        <a href="javascript:void(0)" onclick="openMenu(event, 'FingerFood');">
+          <div style="border-top: 0.5px black solid; border-right: 0.5px black solid;" class="w3-col s4 tablink w3-padding-large w3-hover-dark-grey"> Fingerfood</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');">
+          <div style="border-top: 0.5px black solid; border-right: 0.5px black solid;" class="w3-col s4 tablink w3-padding-large w3-hover-dark-grey"> Sandwiche</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+          <div style="border-top: 0.5px black solid;" class="w3-col s4 tablink w3-padding-large w3-w3-hover-dark-grey"> Nápoje</div>
+        </a>
+
+      </div>
+
+      <div>
+        <div id="Drinks" class="  w3-container menu w3-padding-32 w3-white">
+          <h1><b>oooooo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">ooo</span></h1>
+          <p class="w3-text-grey">ooooooooooooooooooooooooooo</p>
+          <hr>
+
+          <h1><b>oooooo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">ooo</span></h1>
+          <p class="w3-text-grey">ooooooooooooooooooooooooooo</p>
+          <hr>
+
+          <h1><b>oooooo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">ooo</span></h1>
+          <p class="w3-text-grey">ooooooooooooooooooooooooooo</p>
+          <hr>
+
+        </div>
+        <div id="FingerFood" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>xxx</b> <span class="w3-right w3-tag w3-dark-grey w3-round">xxx</span></h1>
+          <p class="w3-text-grey">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <hr>
+
+          <h1><b>xxxxxx</b> <span class="w3-right w3-tag w3-dark-grey w3-round">xxx</span></h1>
+          <p class="w3-text-grey">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <hr>
+
+          <h1><b>xxxxxx</b> <span class="w3-right w3-tag w3-dark-grey w3-round">xxx</span></h1>
+          <p class="w3-text-grey">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <hr>
+
+        </div>
+
+        <div id="Burger" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>vvvvvv</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
+              class="w3-right w3-tag w3-dark-grey w3-round">vvv</span></h1>
+          <p class="w3-text-grey">vvvvvvvvvvvvvvvvvvvvvvvv</p>
+          <hr>
+
+          <h1><b>vvvvvv</b> <span class="w3-right w3-tag w3-dark-grey w3-round">vvv</span></h1>
+          <p class="w3-text-grey">vvvvvvvvvvvvvvvvvvvvvvvv</p>
+          <hr>
+
+          <h1><b>vvvvvvvv</b> <span class="w3-right w3-tag w3-dark-grey w3-round">vvv</span></h1>
+          <p class="w3-text-grey">vvvvvvvvvvvvvvvvvvvvvvvv</p>
+          <hr>
+
+          <h1><b>vvvvvvvv</b> <span class="w3-right w3-tag w3-dark-grey w3-round">vvv</span></h1>
+          <p class="w3-text-grey">vvvvvvvvvvvvvvvvvvvvvvvv</p>
+        </div>
+
+
+        <div id="Salads" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>zzzz</b> <span class="w3-right w3-tag w3-dark-grey w3-round">zzzz</span></h1>
+          <p class="w3-text-grey">zzzzzzzzzzzzzzzzzzzzzzzzz</p>
+          <hr>
+
+          <h1><b>zzzz</b> <span class="w3-right w3-tag w3-dark-grey w3-round">zzz</span></h1>
+          <p class="w3-text-grey">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+          <hr>
+        </div><br>
+
+      </div>
+      <div>
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>yyyyyy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">yyy</span></h1>
+          <p class="w3-text-grey">yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+          <hr>
+
+          <h1><b>yyyyyy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">yyy</span></h1>
+          <p class="w3-text-grey">yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+          <hr>
+
+          <h1><b>yyyyyy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">yyy</span></h1>
+          <p class="w3-text-grey">yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+          <hr>
+
+        </div>
+
+        <div id="Sandwiches" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>jjjjjjjjjjjjjjjjjjjjjjjj</b> <span class="w3-right w3-tag w3-dark-grey w3-round">jjj</span></h1>
+          <p class="w3-text-grey">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+          <hr>
+
+          <h1><b>jjjjjjjjjjjjjjjjjjjjjjjj</b> <span class="w3-right w3-tag w3-dark-grey w3-round">jjj</span></h1>
+          <p class="w3-text-grey">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+          <hr>
+
+          <h1><b>jjjjjjjjjjjjjjjjjjjjjjjj</b> <span class="w3-right w3-tag w3-dark-grey w3-round">jjj</span></h1>
+          <p class="w3-text-grey">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+          <hr>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- About Container -->
+    <div class="   w3-red  w3-large" id="about">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">O nás</h1>
+        <p>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+        <p><strong>Kuchař?</strong> Mr. xxxxx</p>
+        <p>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+        <h1><b>Otvírací doba</b></h1>
+
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <p>Pondělí xx.xx xx.xx</p>
+            <P>Úterý xx.xx - xx.xx</P>
+            <p>Středa xx.xx - xx.xx</p>
+            <p>Čtvrtek xx:xx - xx:xx</p>
+          </div>
+          <div class="w3-col s6">
+            <p>Pátek xx:xx - xx.xx</p>
+            <p>Sobota xx:xx - xx.xx</p>
+            <p>Neděle xx.xx - xx.xx</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class=" w3-container w3-dark-grey">
+      <p>
+
+      </p>
+
+    </div>
+
+    <!-- Image of location/map -->
+
+
+    <!-- Contact -->
+    <div class=" w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Kontakt</h1>
+        <p>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+        <p> jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+        <p>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+        <p> jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+      <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="w3-hover-text-green"></a></p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; +1, ++i) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; ++i) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-red";
+      }
+      document.getElementById("myLink").click();
+
+
+    </script>
+
+</body>
+
+</html>
